@@ -8,6 +8,8 @@ function waffelzutaten(){
     var Valinezucker=parseInt(document.getElementById("Valinezucker").value)
     var Backpulver=parseInt(document.getElementById("Backpulver").value)
     var Nutella=parseInt(document.getElementById("Nutella").value)*5
+    var servietten=parseInt(document.getElementById("servietten").value)
+
 
     var lmehl=[];
     var lZucker=[];
@@ -16,6 +18,7 @@ function waffelzutaten(){
     var lpudcerzucker=[];
     var lValinezucker=[];
     var lBackpulver=[];
+    var lservietten=[];
     var lNutella=[];
 
 
@@ -30,6 +33,15 @@ function waffelzutaten(){
         }else{
             if(Names.length!=0){
                 lmehl.push(Names[0])
+                Names.shift(Names[0])
+            }
+           
+        }
+        if(servietten>0){
+            servietten--
+        }else{
+            if(Names.length!=0){
+                lservietten.push(Names[0])
                 Names.shift(Names[0])
             }
            
@@ -109,7 +121,7 @@ function waffelzutaten(){
         }
         
     }
-    var finaltext=`Mehl: \n ${allnames(lmehl)}\n\n Zucker: \n ${allnames(lZucker)}\n\n Butter: \n ${allnames(lButter)}\n\n Milch: \n ${allnames(lMilch)}\n\n Nuttela: \n ${nuttelaname(lNutella)}\n\n pudcerzucker: \n ${allnames(lpudcerzucker)}\n\n Backpulver: \n ${allnames(lBackpulver)}\n\n Valinezucker: \n ${allnames(lValinezucker)}\n\n`
+    var finaltext=`\n 1kg Mehl: \n ${allnames(lmehl)}\n\n 1kg Zucker: \n ${allnames(lZucker)}\n\n 500gram Magarine: \n ${allnames(lButter)}\n\n  1Liter Haltbare-Milch: \n ${allnames(lMilch)}\n\n Nuttela: \n ${nuttelaname(lNutella)}\n\n 1p pudcerzucker: \n ${allnames(lpudcerzucker)}\n\n 20p Backpulver: \n ${allnames(lBackpulver)}\n\n 20p Valinezucker: \n ${allnames(lValinezucker)}\n\n 25 Servietten: \n ${allnames(lservietten)}\n\n`
     
     document.getElementById("massage").innerHTML=finaltext
     document.getElementById("massage").hidden=false
