@@ -125,6 +125,7 @@ function waffelzutaten(){
     
     document.getElementById("massage").innerHTML=finaltext
     document.getElementById("massage").hidden=false
+    document.getElementById("massage").focus()
 }
 function removespace(textin){
     for(i=0; i<textin.length;i++){

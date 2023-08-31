@@ -1,0 +1,58 @@
+.Enter{
+    background-color: rgb(240, 191, 112);
+    border: 3px black solid ;
+    border-radius: 2px;
+    margin-top: 1vh; 
+    font-size: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Enter input{
+    height: 5vh;
+}
+.Names{
+    margin-top: 1vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(254, 144, 0);
+    font-size: 5vh;
+}
+.Names textarea{
+    background-color: antiquewhite;
+    flex:1;
+}
+button{
+    margin-top: 2vh;
+    background-color: antiquewhite;
+    border: black solid 2px;
+    height: 5vh;
+    width: 40vh;
+    margin-left: 30vw;
+    transition: all 0.3s;
+}
+button:hover{
+    background-color: rgb(220, 136, 26);
+    border: black solid 2px;
+    height: 5vh;
+    width: 60vh;
+    margin-left: 20vw;
+    border-radius: 5px;
+}
+.Finaltext{
+    margin-top: 1vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.Finaltext textarea{
+    background-color: antiquewhite;
+    flex:1;   
+}
