@@ -52,7 +52,7 @@ function waffelzutaten(){
             if(Names.length!=0){
                 lZucker.push(Names[0])
                 Names.shift(Names[0])
-                Zucker=1;
+                Zucker=3;
             }
             
         }
